@@ -1,16 +1,19 @@
 {
-    "version": 2,
-    "builds": [
-      {
-        "src": "bitbucket.html",
-        "use": "@vercel/static"
-      }
-    ],
-    "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "/bitbucket.html"
-      }
-    ]
-  }
-  
+  "version": 2,
+  "builds": [
+    {
+      "src": "BitBucket.html",
+      "use": "@now/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/BitBucket.html"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/BitBucket.html"
+    }
+  ]
+}
